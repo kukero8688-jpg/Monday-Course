@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-          font-family: "Zen Maru Gothic", sans-serif;
+          font-family:  "M PLUS Rounded 1c", sans-serif;
 }
 
 :root {
---bg001: 
-#245C48;
+--bg001: #245C48;
 --bg002:#F37021;
 --bg003:#f5e2b8;
 --bg004:#fff00f;
@@ -20,10 +17,9 @@ body{
 --bg007:#19215b;
 
 --border01:#545645;
+--border02:#688888;
 
-
---btn001: #B89B5E
-;
+--btn001: #B89B5E;
 --btn002: #8A4B2A;
 --btn001hover:#ffa601;
 --font01:aliceblue;
