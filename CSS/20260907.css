@@ -6,7 +6,6 @@
          body {
              background-color: var(--bg002s);
              background-image: url(../image/geenbg.avif);
-
          }
 
          .wrapper {
@@ -25,7 +24,6 @@
              background-image: url(../image/leaf.avif);
              background-position: center center;
              background-size: cover;
-             
          }
 
          .logo img{
