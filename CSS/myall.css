@@ -16,7 +16,9 @@ body{
 --bg004:#fff00f;
 --bg005:#0584f2;
 --bg006:#A79674;
---BG007:#19215b;
+--bg007:#19215b;
+
+--border01:#545645;
 
 
 --btn001: #B89B5E
@@ -24,6 +26,8 @@ body{
 --btn002: #8A4B2A;
 --btn001hover:#ffa601;
 --font01:aliceblue;
+--font02:#545444;
+--font03:#3b3bec;
 }
 .fw-100{
 font-weight: 100;

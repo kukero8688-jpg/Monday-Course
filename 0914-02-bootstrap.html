@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boostrap_box練習02</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/myall.css" />
+    <style>
+      .box01 {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+        border: 8px solid var(--bg002);
+        border-radius: 15px;
+        background-color: var(--bg004);
+        color: var(--font03);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .box01:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      }
+      .box02 {
+        width: 100%;
+        padding: 15px;
+        border: 8px solid var(--bg006);
+        border-radius: 15px;
+
+        background-color: var(--bg007);
+        color: var(--font01);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .box02:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CH03 文字相關</h1>
+      <div class="box01">
+        <h2>H1~H5</h2>
+        <div class="h1">這是主標題Bootstrap 練習平台</div>
+        <div class="h2">這是次標題關於我們的核心產品</div>
+        <div class="h3">這是三級標題最新環保永續商品介紹</div>
+        <div class="h4">這是四級標題點擊下方卡片看更多資訊</div>
+        <div class="h5">這是五級標題：注意！本網站目前為測試環境</div>
+      </div>
+
+      <div class="box01">
+        <div class="display-1">display-1這是一個標題</div>
+        <div class="display-2">display-2這是一個標題</div>
+        <div class="display-3">display-3這是一個標題</div>
+        <div class="display-4">display-4這是一個標題</div>
+        <div class="display-5">display-5這是一個標題</div>
+      </div>
+
+      <div class="box01">
+        <div class="diplay-2 fw-900">text-star,text-center,text-end</div>
+        <p class="display-5 text-start">讓每一天，都值得被精緻對待</p> <!--start靠左-->
+        <p class="display-5 text-center">讓每一天，都值得被精緻對待</p><!--置中-->
+        <p calss="display-5 text-end">讓每一天，都值得被精緻對待</p><!--end靠右-->
+      </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
