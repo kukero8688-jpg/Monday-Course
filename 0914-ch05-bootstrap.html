@@ -6,11 +6,19 @@
     <title>ch.5 表格(table)</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/myall.css" />
+    <style>
+      @media screen and (max-width:768px){
+        .table-rwd thead{
+          display:none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="display-1 fw-900">ch.5 表格(table)</div>
       <table class="table table-striped table-bordered table-hover table-sm">
+        <caption>產品列表1.0</caption>
         <thead class="table-dark">
           <tr>
             <th>編號</th>
@@ -29,7 +37,7 @@
           </tr>
           <tr class="table-success">
             <th>02</th>
-            <th>西瓜牛奶</th>
+            <th class="bg-danger">西瓜牛奶</th>
             <th class="table-danger"><del>$160</del>  特價$80</th>
             <th>半糖微冰</th>
           </tr>
