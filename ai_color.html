@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20260824</title>
+    <style>
+      @media screen and(max-width:1024px) {
+        .wrapper {
+          width: 95%;
+        }
+      }
+
+ 
+      body {
+        /* 修改：深午夜藍底色 */
+        background-color: #0b1320;
+      }
+      .wrapper {
+        width: 1024px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .logo {
+        width: 1024px;
+        height: 120px;
+      }
+      .logo img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      nav {
+        /* 修改：稍微亮一點的深藍色區塊 */
+        background-color: #152238;
+        text-align: right;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        padding-top: 25px;
+        padding-bottom: 2px;
+        
+      }
+      nav ul {
+        display: inline-block;
+        margin: 25px 20px;
+      }
+      nav ul li {
+        list-style: none;
+        float: left;
+        text-align: center;
+      }
+      nav ul li a {
+        display: block;
+        /* 修改：香檳金按鈕 */
+        background-color: #c5a880;
+        border-radius: 30px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: 10px;
+        /* 修改：深色文字增加對比度 */
+        color: #0f1724;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        /* 修改：懸停時為更亮的金色，並加入柔和的高級發光陰影 */
+        background-color: #dfc6a1;
+        color: #0b1320;
+        box-shadow: 0px 4px 15px rgba(197, 168, 128, 0.4);
+      }
+      .content_in {
+        padding: 30px 50px;
+        text-align: center;
+        /* 修改：雅緻的深灰藍色 */
+        background-color: #111c2e;
+      }
+      .content_in h1 {
+        /* 修改：主標題使用香檳金 */
+        color: #c5a880;
+        margin-bottom: 30px;
+      }
+      .content_in p {
+        font: size 18px;
+        margin-bottom: 50px;
+        /* 新增：為了在深色背景下閱讀舒適，加上淺灰藍色文字 */
+        color: #e2e8f0;
+        line-height: 1.8; /* 稍微增加行高讓質感更好，若嚴格不改可刪除此行 */
+      }
+      .content_in a {
+        display: block;
+        width: 130px;
+        height: 40px;
+        margin: 0 auto;
+        /* 修改：半透明的香檳金底色 */
+        background-color: rgba(197, 168, 128, 0.15);
+        /* 修改：香檳金文字 */
+        color: #c5a880;
+        line-height: 40px;
+        text-decoration: none;
+        /* 取消原有的底線，讓按鈕看起來更現代高級 */
+        border-radius: 20px;
+        border: 1px solid #c5a880; /* 新增極細邊框提升精緻度 */
+      }
+
+
+
+      .content_in a:hover {
+        /* 修改：懸停時按鈕反轉為實心香檳金 */
+        background-color: #c5a880;
+        color: #0f1724;
+        box-shadow: 0px 4px 15px rgba(197, 168, 128, 0.3);
+        text-decoration: none;
+      }
+
+      .content02 {
+        display: block;
+        background-color: #f9fafc;
+        padding-bottom: 45px;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin: 0px 0px;
+        text-align: left;
+      }
+
+      .photo-group {
+        display: flex;
+        justify-content: flex-start;
+        gap: 60px;
+        padding: 70px;
+      }
+
+      .pdd01 {
+        width: 100px;
+        height: 100px;
+        border-radius: 200px;
+        box-sizing: border-box;
+        background-color: #111c2e;
+      }
+
+      .content02 h1 {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #5e4829;
+        line-height: 100px;
+      }
+
+      .footer {
+        /* 修改：極深的午夜藍區隔頁尾 */
+        background-color: #080d17;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 1024px; /* 這裡原本的 margin-top:1024px 可能會造成版面極大空白，若非刻意可考慮調整 */
+        padding: 1px 0;
+        /* 修改：低調的暗灰藍色 */
+        color: #64748b;
+      }
+      .image-gallery {
+        display: flex;
+        gap: 24px;
+        justify-content: center; 
+        padding: 20px; 
+        flex-wrap: wrap; 
+      }
+
+      
+      .image-gallery img {
+        width: 300px; 
+        height: 220px; 
+        object-fit: cover; 
+        
+        border-radius: 16px; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+
+      
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease; 
+ 
+      }
+
+      /* 3. 進階美化：滑鼠移上去時的互動特效（Hover Effect） */
+      .image-gallery img:hover {
+        transform: translateY(-5px) scale(1.1); /* 圖片微微向上飄，並稍微放大 1.03 倍 */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* 陰影加深，創造懸浮在空中的視覺 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://www.behance.net/">首頁</a></li>
+            <li><a href="https://www.behance.net/">關於我們</a></li>
+            <li><a href="https://www.behance.net/">產品</a></li>
+            <li><a href="https://www.behance.net/">服務</a></li>
+            <li><a href="https://www.behance.net/">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="content_in">
+            
+          <h1>Welcome to My Website</h1>
+          <p>
+            品牌核心與價值主張（吸引目光）<br />
+            在瞬息萬變的數位時代裡，我們深信「創新」與「溫度」是連結品牌的最佳橋樑。<br />我們是一支充滿熱情與專業的跨領域團隊，致力於透過前瞻性的思維與細膩的設計，<br />為每一位夥伴量身打造獨一無二的數位解決方案。從最初的策略規劃到完美的落地執行，我們陪著你將每一個大膽的構想，<br />化為觸動人心的真實體驗。
+          </p>
+          <p>
+            服務承諾與未來願景（建立信任）<br />
+            我們不只是你的服務提供者，更是你追求卓越道路上的最佳長期夥伴。<br />多年來，我們堅持以用戶需求為核心、以卓越品質為標準，不斷突破技術與創意的邊界。無論你是剛起步的創新創業團隊，<br />或是尋求轉型的成熟企業，我們都期待與你攜手並進，充滿機遇的未來中，共創無限可能。
+          </p>
+          <a href="https://www.behance.net/">了解更多</a>
+          <!-- 充滿機遇的未來中，共創無限可能 -->
+        </div>
+      </div>
+      <div class="image-gallery">
+        <img
+          src="https://cdn-general.cybassets.com/s/files/20137/ckeditor/pictures/content_08a5e6be-7121-469a-a659-df67258c3280.jpg"
+          alt="01"
+        />
+        <img
+          src="https://b2eimg.pxec.com.tw/00475870/802e409e310c4c8ab0b63e07e64afc94.jpg"
+          alt="02"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpyblqJOrAde74_-J0Rh5UVuwMHMayMEN_QcNR02ZcwBDHxlrLIaWdhY&s=10"
+          alt="03"
+        />
+      </div>
+      <div class="content02">
+        <h1>護眼檯燈優勢</h1>
+        <p>
+          我們專注研發最懂你的光學夥伴，這款護眼檯燈搭載全光譜技術，能還原自然晨光並物理過濾99%有害藍光。內置AI晶片可即時偵測環境明暗，無縫微調至最舒適亮度，徹底解決眩光痛點，全方位守護你的靈魂之窗。
+        </p>
+        <h1>高效能筆電優勢</h1>
+        <p>
+          身為引領科技的高效筆電，我們搭載新一代處理器與頂級獨顯，無論3D渲染或高負載遊戲皆流暢無卡頓。配合航太級靜音散熱系統與全天候高續航力，將強悍效能融入輕薄鋁合金機身，是兼具便攜與美學的極致結晶。
+        </p>
+        <h1>黑松露益生菌優勢</h1>
+        <p>
+          我們深知忙碌生活的健康痛點，這款益生菌採用專利包埋技術，能保護活性直達消化道。更添加珍貴黑松露多醣體，全面調整體質並提升新陳代謝，成分純淨無化學添加，每天一包輕鬆告別負擔，找回身體最佳平衡。
+        </p>
+      </div>
+      <div class="footer">
+        <p>Copyright © 2026 front-end website. All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

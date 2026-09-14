@@ -1,0 +1,245 @@
+         * {
+             margin: 0;
+             padding: 0;
+         }
+
+         body {
+             background-color: var(--bg002s);
+             background-image: url(../image/geenbg.avif);
+
+         }
+
+         .wrapper {
+             width: 1024px;
+             margin-top: 10px;
+             margin-bottom: 0;
+             margin-left: auto;
+             margin-right: auto;
+         }
+
+         .logo {
+             width: 1024px;
+             height: 200px;
+             border-radius: 25px 25px 0 0;
+             background-color: var(--bg001);
+             background-image: url(../image/leaf.avif);
+             background-position: center center;
+             background-size: cover;
+             
+         }
+
+         .logo img{
+            width: 50px;
+            height: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+         }
+
+         nav {
+             background-color:var(--bg003);
+             text-align: center;
+             margin-top: 5px;
+             padding-bottom: 20px;
+             padding-top: 20px;
+             
+         }
+
+         nav ul {
+             display: inline-block;
+         }
+
+         nav ul li {
+             float: left;
+             list-style: none;
+         }
+
+         nav ul li a {
+             padding: 10px;
+             background-color:var(--bg002);
+             margin-right: 20px;
+             text-decoration: none;
+             color: rgb(248, 248, 248);
+             margin-bottom: 5px;
+             font-size: 18px;
+             font-weight: bolder;
+             border-radius: 10px;
+             box-shadow: 1px 1px 1cap 0px rgb(139, 139, 139);
+         }
+
+         nav ul li a:hover {
+             font-size: 20px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             color: brown;
+             background-color: var(--btn001);
+         }
+
+         .content {
+             background-color:var(--bg003);
+             padding-right: 50px;
+             padding-left: 50px;
+             padding-bottom: 10px;
+             padding-top: 10px;
+             margin-top: 5px;
+             background-image: url(../image/grey.avif);
+             backdrop-filter:blur(200px);
+         }
+
+         .content h1{
+             text-align: center;
+             background-color:var(--bg001);
+             color:var(--font01);
+             padding-right: 0px;
+             padding-left: 0px;
+             padding-top: 30px;
+             padding-bottom: 20px;
+             border-radius: 20px;
+             box-shadow: 1px 1px 1cap 3px rgb(139, 139, 139);
+         }
+
+         .content .box01 {
+            width: 48%;
+            height:200px;
+            margin-top: 10px;
+            padding-left: 25px;
+            border-radius: 10px;
+        
+            background-image: url(../image/forest.avif);
+            background-position: center center;
+            float: left;
+            box-shadow: 1px 1px 1cap 3px rgb(139, 139, 139);
+            }
+
+        .content .box02 {
+            width: 48%;
+            height:200px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+
+            background-image: url(../image/eco.avif);
+            background-position: center center;
+            float: left;
+            box-shadow: 1px 1px 1cap 3px rgb(139, 139, 139);
+         }
+
+
+         .content p {
+             text-align: justify;
+             padding: 10px;
+             margin-bottom: 20px;
+             font-size: 20px;
+             text-shadow: 1px 0px 1cap 3px rgb(139, 139, 139);
+             color: rgb(0, 1, 2);
+
+         }
+
+
+         .content a {
+             display: block;
+             text-align: center;
+             text-decoration: none;
+             font-size: 20px;
+             background-color: var(--bg002);
+             padding-top: 10px;
+             width: 120px;
+             height: 40px;
+             margin-top: 0;
+             margin-bottom: 0;
+             margin-left: auto;
+             margin-right: auto;
+             border-radius: 5px;
+             color: aliceblue;
+             box-shadow: 1px 0px 1cap 0px rgb(139, 139, 139);
+         }
+
+         .content a:hover {
+             font-style: italic;
+             color: rgb(56, 1, 255);
+             background-color: var(--btn001hover);
+         }
+
+         .footer {
+             background-color:var(--bg001);
+             padding-top: 20px;
+             padding-bottom: 20px;
+             text-align: center;
+             margin-top: 5px;
+             color:var(--font01);
+             text-shadow: 1px 1px 3px wheat;
+         }
+
+         @media screen and (max-width: 1024px) {
+             .wrapper {
+                 width: 95%;
+             }
+
+             .banner .logo {
+                 width: 100%;
+                 height: 100px;
+                 background-color:var(--bg001);
+                 background-image: url(../image/leaf.avif);
+             }
+         }
+
+         @media screen and (max-width:768px) {
+            body{
+             background-image: url(../image/grey.avif);
+             filter: blur(background-image 10px);
+            }
+             nav ul {
+                 display: block;
+
+             }
+
+             nav ul li {
+                 float: none;
+                 margin-top: 5px;
+
+             }
+
+             nav ul li a {
+                 display: block;
+                 margin-top: 5px;
+                 margin-bottom: 10px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 padding-left: 3px;
+                 padding-right: 2px;
+                 border-radius: 5px;
+                 width: 150px;
+             }
+
+             .logo{
+                background-image:url(../image/yellow.avif);
+                background-position: center center;
+             }
+             .content h1 {
+                 font-size: 33px;
+                 color: blue;
+                 box-shadow: 1px 1px 1ch 1px;
+
+             }
+
+             .content p {
+                 margin-top: 20px;
+                 text-align: left;
+                 text-transform: capitalize;
+                 font-size: 16px;
+                 font-style: inherit;
+                 background-color: aliceblue;
+                 border-radius: 10px;
+                 color: rgb(0, 66, 124);
+                 box-shadow: 1px 1px 1ch 1px;
+                 letter-spacing: 10em;
+             }
+
+             .footer p {
+                 font-size: 14px;
+                 color: aliceblue;
+                 
+             }
+
+
+         }

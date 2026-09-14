@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>切版練習</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #577e89;
+      }
+
+      .wrapper {
+        width: 1024px;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        box-shadow: 1px 1px 15px 3px rgb(48, 70, 76);
+      }
+
+      .logo {
+        width: 1024px;
+        height: 120px;
+        background-color: #577e89;
+      }
+      .logo img {
+        width: 1024px;
+        height: 180px;
+        object-fit: cover;
+        object-position: 0 0 10px 120px;
+      }
+
+      nav {
+        background-color: #dec484;
+        text-align: center;
+        margin-top: 5px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      nav ul {
+        display: inline-block;
+        /* 讓按鈕橫著排列 */
+      }
+
+      nav ul li {
+        float: left;
+        list-style: none;
+        /* 去除表單圓點 */
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #577e89;
+        background-color: #e2d8a5;
+        border-radius: 8px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: 15px;
+        box-shadow: 2px 2px 10px rgb(174, 153, 102);
+
+        font-size: 18px;
+        font-weight: bold;
+        font-family: cursive;
+      }
+
+      nav ul li a:hover {
+        background-color: #6f9f9c;
+        color: #ffffff;
+        box-shadow: 2px 6px #577e89;
+      }
+
+      .content {
+        background-color: #6f9f9c;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        
+      }
+      .content a{
+         width: 200px;
+        height: 100px;
+        line-height: 40px;
+
+      }
+
+      .content h1 {
+        margin-bottom: 25px;
+        padding-bottom: 50px;
+        color: #577e89;
+        text-align: center;
+        padding-top: 50px;
+        background-color: #e2d8a5;
+        border-radius: 80px;
+        font-size: 50px;
+        -webkit-text-stroke: 1px #e1a36f;
+      }
+
+      .content p {
+        font-size: 18px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      .content a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        background-color: #e1a36f;
+        color: #577e89;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 50px;
+        /* line-heght水平置中要跟高度相同上下才會置中 */
+
+        font-weight: bold;
+        font-family: cursive;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 15px;
+        font-family: fantasy;
+        box-shadow: 0 0 2px 1px #e2d8a5;
+
+        transition: transform 0.2s ease;
+      }
+
+      .content a:hover {
+        font-size: 21px;
+        color: #ffffff;
+        text-decoration: none;
+
+        transform: scale(1.25);
+        background-color: #577e89;
+      }
+
+      .footer {
+        background-color: #e1a36f;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+        text-align: center;
+        color: #577e89;
+        font-weight: bolder;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        width: 1024px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .wrapper{
+            width: 95%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .logo{
+            width: 100%;
+            height:80px;
+        }
+        .logo img{
+            width: 100%;
+            height:80px;
+        }
+
+
+        nav ul{
+            display: block;
+
+
+        }
+         nav ul li{
+            float:none;
+            margin-bottom: 20px;
+      }
+
+      nav ul li a{
+        display: block;
+        border-radius: 50px;
+        padding: 10px;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .content{
+        padding-right:20px ;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+
+
+      }
+      .content h1{
+        font-size: 30px;
+        border-radius: 5px;
+      }
+
+      .content p{
+        font-style:italic;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .content a{
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="logo"><img src="./Fu.png" alt="" /></div>
+        <nav>
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">活作店家</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>
+          品牌核心與價值主張（吸引目光）<br />
+          在瞬息萬變的數位時代裡，我們深信「創新」與「溫度」是連結品牌的最佳橋樑。<br />我們是一支充滿熱情與專業的跨領域團隊，致力於透過前瞻性的思維與細膩的設計，<br />為每一位夥伴量身打造獨一無二的數位解決方案。從最初的策略規劃到完美的落地執行，我們陪著你將每一個大膽的構想，<br />化為觸動人心的真實體驗。
+        </p>
+        <p>
+          服務承諾與未來願景（建立信任）<br />
+          我們不只是你的服務提供者，更是你追求卓越道路上的最佳長期夥伴。<br />多年來，我們堅持以用戶需求為核心、以卓越品質為標準，不斷突破技術與創意的邊界。無論你是剛起步的創新創業團隊，<br />或是尋求轉型的成熟企業，我們都期待與你攜手並進，充滿機遇的未來中，共創無限可能。
+        </p>
+        <a href="https://www.behance.net/">了解更多</a>
+      </div>
+      <div class="footer">
+        <p>Copyright © 2026 front-end website. All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

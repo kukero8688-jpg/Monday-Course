@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端客製常打模板</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: chocolate;
+    }
+    .wrapper{
+      width:1024px;
+      margin-bottom: 0;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo{
+      width: 1024px;
+      height: 130px;
+      background-color: antiquewhite;
+    }
+   
+    nav{
+      background-color: burlywood;
+      text-align: center;
+      margin-top: 3px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    nav ul{
+      display: inline-block;
+    }
+
+    nav ul li{
+      float: left;
+      list-style: none;
+      letter-spacing: 5px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: brown;
+      color: aliceblue;
+      margin-right: 15px;
+      border-radius: 5px;
+      box-shadow:1px 1px 6px cornsilk;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover{
+      font-size: 18px;
+      background-color: beige;
+      color: brown;
+    }
+    
+    .content{
+      background-color: antiquewhite;
+      margin-top: 3px;
+      padding-bottom: 100px;
+      padding-top: 100px;
+      padding-right: 100px;
+      padding-left: 100px;
+      border-radius: 15px;
+    }
+    .content h1{
+      background-color: bisque;
+      font-size: 50px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+      -webkit-text-stroke: 1px #030303;
+    }
+
+    .content p{
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: rgb(235, 232, 229);
+      text-align: left;
+      margin-bottom: 20px;
+      color:cadetblue;
+    }
+     .content a{
+      display: block;
+      width: 100px;
+      height: 50px;
+      letter-spacing: 2px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 50px;
+      background-color: rgb(235, 232, 229);
+      text-decoration: none;
+      background-color: blue;
+      color: aliceblue;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 16px;
+      box-shadow:0 0 1px 5px cornsilk;
+     }
+      .content a:hover{
+      font-size: 18px;
+      background-color: rgb(238, 255, 0);
+      color: blue;
+    }
+
+
+    
+    .footer{
+      background-color: brown;
+      text-align: center;
+      color: aliceblue;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5px;
+      padding-top:15px;
+      padding-bottom:15px;
+      width:1024px;
+    }
+
+    @media screen and (max-width:1024px){
+      .wrapper{
+        width: 95%;
+      }
+      .logo{
+        width: 100%;
+      }
+      
+    }
+     @media screen and (max-width:768px){
+      .wrapper{
+        width: 95%;
+      }
+     
+      nav ul{
+      display: block;
+      }
+
+      nav ul li{
+        float: none;
+        margin-bottom: 15px;
+      }
+
+      nav ul li a{
+        display: block;
+        border-radius: 50px;
+        padding: 10px;
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .content h1{
+        font-size: 30px;
+        color: brown;
+
+        padding: 50px 5px 50px 5px;
+      }
+
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <h1>voyage</h1>
+          <p> Cosmic Ocean Odyssey</p>
+          <p>Deep Sea Quest</p>
+          <p>Maiden Voyage</p>
+        <img src="" alt="" /></div>
+        <nav>
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">產品介紹</a></li>
+            <li><a href="#">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Welcome Voyage</h1>
+        <p>
+          Voyage 是一個源於探索精神與精緻生活追求的高端生活風格品牌。我們相信，生活不是一個終點，而是一場不斷發現自我的旅程。受到世界各地多元地貌、文化與經典美學的啟發，Voyage 精心設計每一件生活必需品，優雅地陪伴您走過人生的每一個章節。
+          <br>我們的品牌哲學完美融合了「實用功能」與「現代極簡」。
+          
+          <br>從旅行裝備、時尚服飾到日常品味選物，我們系列中的每一款產品都注入了對細節的極致追求，並採用永續、高品質且經久耐用的材質打造。我們在實用性與奢華質感之間架起橋樑，確保您能以從容、自信且充滿目標的姿態，在世界各地自在穿梭
+          
+          <br>Voyage 不僅僅是一個品牌，更是當代漫遊者、夢想家與實踐者的一種生活態度。無論是穿梭於日常的通勤、探索未知的異國領域，還是在平凡生活中尋找靈感，Voyage 都是您最完美的旅伴。探索你的道路。擁抱你的旅程。歡迎來到 Voyage。
+        </p>
+        <a href="#">了解更多</a>
+      </div>
+      <div class="footer"><p>Copyright © 2026 front-end website. All Rights Reserved.</p></div>
+    </div>
+  </body>
+</html>
